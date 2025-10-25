@@ -44,11 +44,13 @@ jobs:
       - name: Run ESLint on changed files
         if: steps.changed_js.outputs.any_changed == 'true'
         run: |
+          echo "Changed files: ${{ steps.changed_js.outputs.all_changed_files }}"
           npx eslint ${{ steps.changed_js.outputs.all_changed_files }}
 
       - name: Run Stylelint on changed files
         if: steps.changed_css.outputs.any_changed == 'true'
         run: |
+          echo "Changed files: ${{ steps.changed_css.outputs.all_changed_files }}"
           npx stylelint ${{ steps.changed_css.outputs.all_changed_files }}
 
       - name: Run TypeScript type check
