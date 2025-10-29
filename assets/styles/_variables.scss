@@ -1,15 +1,13 @@
 $breakpoint-xs: 480px;
-$breakpoint-sm: 640px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 1024px;
+$breakpoint-s: 640px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
 $breakpoint-xl: 1280px;
 
-$color-primary: #3490dc;
-$color-secondary: #ffed4a;
-$color-accent: #e3342f;
+$text-black: #000000;
+$text-white: #ffffff;
+$text-gold: #a18a68;
+$text-gray: #707070;
 
-$color-text: #333333;
-$color-background: #ffffff;
-
-$font-primary: 'Roboto', sans-serif;
-$font-secondary: 'Open Sans', sans-serif;
+$font-primary: 'DM Sans', sans-serif;
+$font-secondary: 'Allerta Stencil', sans-serif;
