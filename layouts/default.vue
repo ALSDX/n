@@ -28,12 +28,12 @@
       padding: 0 36px;
     }
 
-    @media (min-width: $breakpoints-l) {
+    @media (min-width: var.$breakpoint-l) {
       max-width: var.$breakpoint-xl;
       padding: 0 112px;
     }
 
-    @media (min-width: $breakpoints-xl) {
+    @media (min-width: var.$breakpoint-xl) {
       padding: 0 120px;
     }
   }
