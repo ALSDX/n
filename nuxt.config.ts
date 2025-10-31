@@ -17,11 +17,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    apiSecretPath: 'NUXT_API_SECRET_PATH',
-    apiSecretKey: 'NUXT_API_SECRET_KEY',
+    apiSecretPath: process.env.NUXT_API_SECRET_PATH,
+    apiSecretKey: process.env.NUXT_API_SECRET_KEY,
     public: {
-      apiBaseUrl: 'NUXT_PUBLIC_API_BASE_URL',
-      apiBaseToken: 'NUXT_PUBLIC_API_BASE_TOKEN',
+      apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL,
+      apiBaseToken: process.env.NUXT_PUBLIC_API_BASE_TOKEN,
     },
   },
 })
